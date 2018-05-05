@@ -7,15 +7,15 @@ import javax.xml.bind.annotation.XmlRootElement;
 public class ResultNode {
 	private SuccessNode success;
 	private String errorlog;
-	private PerformanceNode performance;
+	private ExecutiontimeNode executiontime;
 
 	public ResultNode() {
 
 	}
 
-	public ResultNode(SuccessNode success, PerformanceNode performance, String errorlog) {
+	public ResultNode(SuccessNode success, ExecutiontimeNode performance, String errorlog) {
 		this.success = success;
-		this.performance = performance;
+		this.executiontime = performance;
 		this.errorlog = errorlog;
 	}
 
@@ -38,11 +38,11 @@ public class ResultNode {
 	}
 
 	@XmlElement
-	public PerformanceNode getPerformance() {
-		return performance;
+	public ExecutiontimeNode getExecutiontime() {
+		return executiontime;
 	}
 
-	public void setPerformance(PerformanceNode performance) {
-		this.performance = performance;
+	public void setExecutiontime(ExecutiontimeNode performance) {
+		this.executiontime = performance;
 	}
 }

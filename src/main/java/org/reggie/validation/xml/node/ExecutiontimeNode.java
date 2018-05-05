@@ -4,16 +4,16 @@ import javax.xml.bind.annotation.XmlAttribute;
 import javax.xml.bind.annotation.XmlRootElement;
 
 @XmlRootElement
-public class PerformanceNode {
+public class ExecutiontimeNode {
 	private String unit = "s";
 	private String mesure;
 	private boolean isRelevant;
 
-	public PerformanceNode() {
+	public ExecutiontimeNode() {
 
 	}
 
-	public PerformanceNode(String mesure, boolean isRelevant) {
+	public ExecutiontimeNode(String mesure, boolean isRelevant) {
 		this.mesure = mesure;
 		this.isRelevant = isRelevant;
 	}
