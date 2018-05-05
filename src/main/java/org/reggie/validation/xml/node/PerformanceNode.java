@@ -5,7 +5,7 @@ import javax.xml.bind.annotation.XmlRootElement;
 
 @XmlRootElement
 public class PerformanceNode {
-	private String unit = "ms";
+	private String unit = "s";
 	private String mesure;
 	private boolean isRelevant;
 
