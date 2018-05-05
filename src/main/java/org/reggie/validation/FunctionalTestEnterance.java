@@ -28,14 +28,14 @@ public class FunctionalTestEnterance {
 
 		// Create result #1
 		SuccessNode ses_1 = new SuccessNode("yes", "100");
-		ExecutiontimeNode perfer_node_1 = new ExecutiontimeNode("1.56", true);
+		ExecutiontimeNode perfer_node_1 = new ExecutiontimeNode("1.1", true);
 		ResultNode result_1 = new ResultNode(ses_1, perfer_node_1, "");
 		TestNode test_1 = new TestNode("API1", "yes", "Good Test man", result_1);
 		report.getTest().add(test_1);
 
 		// Create result #2
 		SuccessNode ses_2 = new SuccessNode("yes", "100");
-		ExecutiontimeNode perfer_node_2 = new ExecutiontimeNode("1.72", true);
+		ExecutiontimeNode perfer_node_2 = new ExecutiontimeNode("1.12", true);
 		ResultNode result_2 = new ResultNode(ses_2, perfer_node_2, "");
 		TestNode test_2 = new TestNode("API2", "yes", "Good Test man", result_2);
 		report.getTest().add(test_2);
