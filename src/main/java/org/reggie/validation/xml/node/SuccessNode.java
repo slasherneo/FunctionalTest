@@ -5,13 +5,13 @@ import javax.xml.bind.annotation.XmlRootElement;
 
 @XmlRootElement
 public class SuccessNode {
-	private boolean passed;
+	private String passed;
 	private String state;
 
 	SuccessNode() {
 	}
 
-	public SuccessNode(boolean passed, String state) {
+	public SuccessNode(String passed, String state) {
 		this.passed = passed;
 		this.state = state;
 	}
@@ -25,12 +25,12 @@ public class SuccessNode {
 		return state;
 	}
 
-	public void setPasses(boolean passed) {
+	public void setPasses(String passed) {
 		this.passed = passed;
 	}
 
 	@XmlAttribute(name = "passed")
-	public boolean isPassed() {
+	public String getPassed() {
 		return passed;
 	}
 }

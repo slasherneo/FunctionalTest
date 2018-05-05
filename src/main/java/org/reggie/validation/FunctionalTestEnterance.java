@@ -27,21 +27,21 @@ public class FunctionalTestEnterance {
 		ReportNode report = new ReportNode("APIs Test", "AAE");
 
 		// Create result #1
-		SuccessNode ses_1 = new SuccessNode(true, "100");
+		SuccessNode ses_1 = new SuccessNode("yes", "100");
 		PerformanceNode perfer_node_1 = new PerformanceNode("1.56", true);
 		ResultNode result_1 = new ResultNode(ses_1, perfer_node_1, "");
 		TestNode test_1 = new TestNode("API1", "yes", "Good Test man", result_1);
 		report.getTest().add(test_1);
 
 		// Create result #2
-		SuccessNode ses_2 = new SuccessNode(true, "100");
+		SuccessNode ses_2 = new SuccessNode("yes", "100");
 		PerformanceNode perfer_node_2 = new PerformanceNode("1.72", true);
 		ResultNode result_2 = new ResultNode(ses_2, perfer_node_2, "");
 		TestNode test_2 = new TestNode("API2", "yes", "Good Test man", result_2);
 		report.getTest().add(test_2);
 
 		// Create result #3
-		SuccessNode ses_3 = new SuccessNode(true, "100");
+		SuccessNode ses_3 = new SuccessNode("yes", "100");
 		PerformanceNode perfer_node_3 = new PerformanceNode("1.12", true);
 		ResultNode result_3 = new ResultNode(ses_3, perfer_node_3, "");
 		TestNode test_3 = new TestNode("COM1", "yes", "Good Test man", result_3);
@@ -53,7 +53,10 @@ public class FunctionalTestEnterance {
 		marshaller.marshal(report, writer);
 		System.out.println(writer.toString());
 
-		File file = new File(args[0],"functional_test.xml");
+		// Get current dir
+		final String dir = System.getProperty("user.dir");
+		
+		File file = new File(dir,"\\build\\test-results\\functional_test.xml");
 		if (!file.exists()) {
 			System.out.println(file.createNewFile());
 		}
