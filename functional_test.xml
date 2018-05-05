@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<report categ="AAE" name="APIs Test">
+    <start>
+        <date format="YYYYMMDD" val="20180505"/>
+        <time format="YYYYMMDD" val="201121"/>
+    </start>
+    <test executed="yes" name="API1">
+        <description>Good Test man</description>
+        <result>
+            <errorlog></errorlog>
+            <performance mesure="1.56" isRelevant="true" unit="ms"/>
+            <success passed="true" state="100"/>
+        </result>
+    </test>
+    <test executed="yes" name="API2">
+        <description>Good Test man</description>
+        <result>
+            <errorlog></errorlog>
+            <performance mesure="1.72" isRelevant="true" unit="ms"/>
+            <success passed="true" state="100"/>
+        </result>
+    </test>
+    <test executed="yes" name="COM1">
+        <description>Good Test man</description>
+        <result>
+            <errorlog></errorlog>
+            <performance mesure="1.12" isRelevant="true" unit="ms"/>
+            <success passed="true" state="100"/>
+        </result>
+    </test>
+</report>
